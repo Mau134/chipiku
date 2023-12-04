@@ -11,7 +11,7 @@
     <img src="./images/chipikulogo.jpg" alt="Logo" class="logo">
     <div class="login-form">
       <h2>Login</h2>
-      <form id="loginForm">
+      <form id="loginForm" action="login.php">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
 
