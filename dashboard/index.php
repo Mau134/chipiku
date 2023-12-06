@@ -14,21 +14,46 @@
     </div>
     <div class="row">
     <div class="word-box">
-        <div class="col-8">
+        <div class="col-6">
             <h1>WELCOME TO CHIPIKU STORES DASHBOARD</h1>
         </div>
     </div>
     </div>
     <div class="row">
-        <div class="functions">
-        <div class="col-4">
-            
+        <div class="profile">
+            <div class="col-2">
+                <img src="../images/photo_2023-03-20_19-31-54.jpg" alt="Profile Image" class="profile-img">
+                <p class="profile-name">Maurice Molande</p>
+                    <div class="logout">
+                        <p class="logout-text">Logout</p>
+                    </div>
+            </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="functions">
+            <div class="col-3">
+                <div class="function1">
+                    <h2>Shopping Cart</h2>
+                </div>
+                <div class="function1">
+                    <h2>Shopping List</h2>
+                </div>
+                <div class="function1">
+                    <h2>Reviews<h2>
+                </div>
+                <div class="function1">
+                    <h2>Promotions</h2>
+                </div>
+                <div class="function1">
+                    <h2>Settings</h2>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="details">
-            <div class="col-8">
+            <div class="col-9">
 
             </div>
         </div>
