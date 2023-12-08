@@ -63,4 +63,30 @@ body {
   button:hover {
     background-color: #cc0000; /* Darker Red */
   }
-  
+
+.external-signin {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.external-signin-icon {
+  width: auto !important; /* Adjust the size as needed */
+  height: 40px !important; /* Adjust the size as needed */
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.external-signin button {
+  background-color: #c20000;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.external-signin button:hover {
+  background-color: #3f79c6;
+}
