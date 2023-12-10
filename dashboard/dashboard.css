@@ -33,20 +33,23 @@ body {
     display: block;
 }
 h1 {
-    color: #016201; /* Green */
+    color: #016201;
     text-align: center;
     font-size: 35px;
-}
+    padding-top: 25px;
+}    
+
 .word-box .col-8{
     height: 29vh;
 }
+
 .functions .col-3{
-    height: 66vh;
+    height: 79vh;
     border-right: #016201 solid 3px;
 }
 
 .details .col-9{
-    height: 66vh;
+    height: 79vh;
     background: #eef1ff; 
 }
 .footer .col-12{
@@ -75,7 +78,13 @@ h1 {
     border-bottom: 2px solid #c20000; /* Border color and width */
     cursor: pointer; /* Change cursor to pointer on hover for better UX */
 }
-
+.functions a {
+    display: block; /* Make the entire link a block element */
+    padding: 10px; /* Add padding for better clickability */
+    color: #3498db; /* Set link color */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+}
 /* Hover effect for .function1 */
 .functions .function1:hover {
     background-color: #6fa5c9; /* Change background color on hover */

@@ -15,7 +15,7 @@
     <div class="row">
     <div class="word-box">
         <div class="col-6">
-            <h1>WELCOME TO CHIPIKU STORES DASHBOARD</h1>
+            <h1>CHIPIKU STORES SHOPPING RECEIPTS</h1>
         </div>
     </div>
     </div>
