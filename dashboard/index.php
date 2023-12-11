@@ -54,13 +54,87 @@
         </div>
     </div>
 </div>
-    <div class="row">
-        <div class="details">
-            <div class="col-9">
-
-            </div>
+<div class="row">
+    <div class="details">
+        <div class="col-9">
+            <table>
+                <thead>
+                    <tr>
+                        <th>All items</th>
+                        <th>Unit price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add your table rows with item details here -->
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>MWK 10,000.00</td>
+                        <td>2</td>
+                        <td>MWK 20,000.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="checkout-btn">Checkout</button>
         </div>
     </div>
+</div>
+
     <div class="row">
         <div class="footer">
             <div class="col-12">

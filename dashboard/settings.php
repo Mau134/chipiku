@@ -57,7 +57,7 @@
     <div class="row">
         <div class="details">
             <div class="col-9">
-
+            
             </div>
         </div>
     </div>
