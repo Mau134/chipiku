@@ -163,3 +163,19 @@ th {
     cursor: pointer;
     border-radius: 12px;
 }
+/* Style for the remove button */
+.remove-btn {
+    background-color: #c20000; /* Set the background color */
+    color: #fff; /* Set the text color */
+    border: none; /* Remove default button border */
+    padding: 8px 12px; /* Adjust padding as needed */
+    cursor: pointer; /* Change cursor to pointer on hover for better UX */
+    border-radius: 5px; /* Border radius for rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for the remove button */
+.remove-btn:hover {
+    background-color: #fff; /* Change background color on hover */
+    color: #c20000; /* Change text color on hover */
+}

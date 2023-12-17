@@ -64,6 +64,7 @@
                         <th>Unit price</th>
                         <th>Quantity</th>
                         <th>Total</th>
+                        <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -73,61 +74,64 @@
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
                     <tr>
                         <td>Item 1</td>
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
                     <tr>
                         <td>Item 1</td>
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
                     <tr>
                         <td>Item 1</td>
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
                     <tr>
                         <td>Item 1</td>
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
                     <tr>
                         <td>Item 1</td>
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
                     <tr>
                         <td>Item 1</td>
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
                     <tr>
                         <td>Item 1</td>
                         <td>MWK 10,000.00</td>
                         <td>2</td>
                         <td>MWK 20,000.00</td>
+                        <td><button class="remove-btn">Remove</button></td> <!-- Remove button -->
                     </tr>
-                    <tr>
-                        <td>Item 1</td>
-                        <td>MWK 10,000.00</td>
-                        <td>2</td>
-                        <td>MWK 20,000.00</td>
-                    </tr>
-                    <tr>
-                        <td>Item 1</td>
-                        <td>MWK 10,000.00</td>
-                        <td>2</td>
-                        <td>MWK 20,000.00</td>
-                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align: right; font-weight: bold;">Overall Total:</td>
+                            <td id="overall-total">MWK 160,000.00</td>
+                            <td></td> <!-- Empty column for the Remove button -->
+                        </tr>
+                    </tfoot>
                 </tbody>
             </table>
             <button class="checkout-btn">Checkout</button>
