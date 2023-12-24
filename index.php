@@ -14,14 +14,14 @@
     <img src="./images/chipikulogo.jpg" alt="Logo" class="logo">
     <div class="login-form">
       <h2>Login</h2>
-      <form id="loginForm" action="login.php">
+      <form id="loginForm" action="login.php" method="POST">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="button" onclick="login()">Login</button>
+        <button type="submit">Login</button>
       </form>
       <div class="external-signin">
       <img src="./images/google.jpeg" alt="Google" class="external-signin-icon">

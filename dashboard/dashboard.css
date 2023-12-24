@@ -109,20 +109,22 @@ h1 {
 }
 
 
-/* Style for the logout button */
-.logout-text {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #666;
-    cursor: pointer; /* Change cursor to pointer on hover for better UX */
-    padding: 8px 15px; /* Add padding to the button */
-    border: 2px solid #c20000; /* Border color and width */
-    border-radius: 5px; /* Border radius for rounded corners */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition on hover */
+.logout {
+    text-align: right;
+    padding: 10px;
+}
+
+.logout-text a {
+    color: #ffffff; /* Set the text color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Set the background color */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
 }
 
 /* Hover effect for the logout button */
-.logout-text:hover {
+.logout-text a:hover {
     background-color: #3498db; /* Change background color on hover */
     color: #000; /* Change text color on hover */
     border-color: #fff; /* Change border color on hover */

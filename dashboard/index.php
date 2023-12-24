@@ -20,16 +20,20 @@
     </div>
     </div>
     <div class="row">
-        <div class="profile">
-            <div class="col-2">
-                <img src="../images/photo_2023-03-20_19-31-54.jpg" alt="Profile Image" class="profile-img">
-                <p class="profile-name">Maurice Molande</p>
-                    <div class="logout">
-                        <p class="logout-text">Logout</p>
-                    </div>
-            </div>
-        </div>
+    <div class="profile">
+      <div class="col-2">
+        <?php if ($userInfo) : ?>
+          <img src="<?php echo $userInfo['Picture']; ?>" alt="Profile Image" class="profile-img">
+          <p class="profile-name"><?php echo $userInfo['FirstName'] . ' ' . $userInfo['LastName']; ?></p>
+          <div class="logout">
+            <p class="logout-text"><a href="logout.php">Logout</a></p>
+          </div>
+        <?php else : ?>
+          <p>Error retrieving user information.</p>
+        <?php endif; ?>
+      </div>
     </div>
+  </div>
 <div class="row">
     <div class="functions">
         <div class="col-3">

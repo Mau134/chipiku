@@ -25,7 +25,7 @@
                 <img src="../images/photo_2023-03-20_19-31-54.jpg" alt="Profile Image" class="profile-img">
                 <p class="profile-name">Maurice Molande</p>
                     <div class="logout">
-                        <p class="logout-text">Logout</p>
+                        <p class="logout-text"><a href="logout.php">Logout</a></p>
                     </div>
             </div>
         </div>
