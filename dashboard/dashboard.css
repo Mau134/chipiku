@@ -216,8 +216,10 @@ th {
 .review-item {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
-    position: relative; /* To position edit and delete buttons */
+    border: 3px solid #45a049;
+    border-radius: 7px;
+    position: relative;
+    height: auto; /* To position edit and delete buttons */
 }
 
 .review-item:hover {

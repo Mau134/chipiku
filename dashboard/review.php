@@ -188,11 +188,9 @@ mysqli_close($conn);
                     <?php foreach ($reviews as $review) : ?>
                         <div class="review-item">
                             <!-- Display post content -->
+                            <p class="review-text">"<?php echo $review['text']; ?>"</p><br/><br/>
                             <p><strong>Date:</strong> <?php echo $review['date']; ?></p>
                             <p><strong>Time:</strong> <?php echo $review['time']; ?></p>
-                            <p><strong>Customer:</strong> <?php echo $review['CustomerID']; ?></p>
-                            <p class="review-text"><?php echo $review['text']; ?></p>
-
                             <!-- Edit and Delete links -->
                             <?php if ($review['CustomerID'] === $_SESSION['CustomerID']) : ?>
                                 <a href="edit_review.php?review_id=<?php echo $review['ReviewsId']; ?>" class="edit-link">Edit</a>
