@@ -94,7 +94,7 @@ h1 {
 .profile-img {
     width: 100px; /* Set the width of the circle */
     height: 100px; /* Set the height of the circle */
-    border-radius: 50%; /* Create a perfect circle with border-radius */
+    border-radius: 50% ; /* Create a perfect circle with border-radius */
     object-fit: cover;
 }
 
