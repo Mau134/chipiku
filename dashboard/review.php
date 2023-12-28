@@ -68,8 +68,32 @@ function getProfilePicture($userID, $conn)
         return null;
     }
 }
+// if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["post_content"])) {
+//     // Assuming you have a function to add a review to the database
+//     addReview($userID, $_POST["post_content"], $conn);
+// }
 
-// ...
+function getReviews($conn)
+{
+    $reviews = [];
+
+    $query = "SELECT * FROM reviews";
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $reviews[] = $row;
+        }
+        mysqli_free_result($result);
+    } else {
+        echo "Error in query: " . mysqli_error($conn);
+    }
+
+    return $reviews;
+}
+
+// Retrieve reviews
+$reviews = getReviews($conn);
 
 // Retrieve user information
 $userID = $_SESSION["CustomerID"];
@@ -157,10 +181,38 @@ mysqli_close($conn);
     <div class="row">
         <div class="details">
             <div class="col-9">
+                <!-- Section to display reviews -->
+                <h2>Customer Reviews</h2>
+                <div class="reviews-section">
+                    <!-- Displaying reviews -->
+                    <?php foreach ($reviews as $review) : ?>
+                        <div class="review-item">
+                            <!-- Display post content -->
+                            <p><strong>Date:</strong> <?php echo $review['date']; ?></p>
+                            <p><strong>Time:</strong> <?php echo $review['time']; ?></p>
+                            <p><strong>Customer:</strong> <?php echo $review['CustomerID']; ?></p>
+                            <p class="review-text"><?php echo $review['text']; ?></p>
 
+                            <!-- Edit and Delete links -->
+                            <?php if ($review['CustomerID'] === $_SESSION['CustomerID']) : ?>
+                                <a href="edit_review.php?review_id=<?php echo $review['ReviewsId']; ?>" class="edit-link">Edit</a>
+                                <a href="delete_review.php?review_id=<?php echo $review['ReviewsId']; ?>" class="delete-link">Delete</a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endforeach; ?>
+
+                </div>
+
+                <!-- Add a form for users to write and submit a review -->
+                <form class="post-form" method="post" action="submit_review.php">
+                    <h2>Write a Review</h2>
+                    <textarea name="reviewText" rows="4" cols="50" placeholder="Write your review here"></textarea><br>
+                    <input type="submit" value="Submit Review">
+                </form>
             </div>
         </div>
     </div>
+
     <div class="row">
         <div class="footer">
             <div class="col-12">

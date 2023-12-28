@@ -181,3 +181,109 @@ th {
     background-color: #fff; /* Change background color on hover */
     color: #c20000; /* Change text color on hover */
 }
+.col-9 h2{
+    text-align: center;
+}
+/* Style for the reviews section */
+.reviews-section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-item {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.review-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.review-item p {
+    margin: 0; /* Remove default margin for paragraphs */
+    font-weight: bold;
+}
+
+.review-item .review-text {
+    margin-top: 10px;
+}
+.review-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    position: relative; /* To position edit and delete buttons */
+}
+
+.review-item:hover {
+    background-color: #f9f9f9;
+}
+/* Style for Edit and Delete links */
+.edit-link,
+.delete-link {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit-link:hover,
+.delete-link:hover {
+    color: #2980b9;
+}
+
+.post-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.post-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.post-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-form textarea {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 8px;
+    resize: none;
+}
+
+.post-form input[type="submit"] {
+    width: auto;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.post-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style for the reviews section */
+.reviews {
+    margin-top: 20px;
+}
+
+
+
+/* Your existing styles can go here */
